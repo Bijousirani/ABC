@@ -17,7 +17,7 @@
     <button onclick="fact()">x!</button>
     <button class="btn">(</button>
     <button class="btn">)</button>
-    <button onclick="modulus()">%</button>
+    <button onclick="pourcent()">%</button>
     <button id="ac" onclick="screen.value=''">AC</button>
 </div>
 <div class="row">
@@ -120,31 +120,10 @@
 screen.value=screen.value.substr(0,screen.value.length-1);
     }
 
-    function floor(){
-        var i, num,f;
-        f=1
-        num=screen.value;
-        for(i=1; i<=num; i++)
-        {
-        f=f%i;    
-        }
-        i=i-1;
-        
-        screen.value=f;}
-
-     
-    function modulus(){
-        var x,y,i;
-        x=screen.value;
-        for(i=1; i<=num; i++)
-        {
-        x=y/100;    
-        }
-    
-
-        screen.value=x;
-    }
-
+  
+ function pourcent() {
+                    screen.value = screen.value / 100
+                }
     
 </script>
 
